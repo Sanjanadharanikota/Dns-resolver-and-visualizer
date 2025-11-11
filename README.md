@@ -198,13 +198,18 @@ Returns cache summary for UI/debug:
 
 ---
 ## Screenshots of project
-[![image-1](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Screenshot%202025-11-11%20213038.png)](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Screenshot%202025-11-11%20213038.png)
+### Screenshots
 
-https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Screenshot%202025-11-11%20213038.png
-https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Screenshot%202025-11-11%20213132.png
-https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Screenshot%202025-11-11%20213222.png
-https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Screenshot%202025-11-11%20213544.png
-https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Screenshot%202025-11-11%20213704.png
+[![Screenshot 1](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Screenshot%202025-11-11%20213038.png)](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Screenshot%202025-11-11%20213038.png)
+
+[![Screenshot 2](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Screenshot%202025-11-11%20213132.png)](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Screenshot%202025-11-11%20213132.png)
+
+[![Screenshot 3](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Screenshot%202025-11-11%20213222.png)](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Screenshot%202025-11-11%20213222.png)
+
+[![Screenshot 4](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Screenshot%202025-11-11%20213544.png)](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Screenshot%202025-11-11%20213544.png)
+
+[![Screenshot 5](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Screenshot%202025-11-11%20213704.png)](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Screenshot%202025-11-11%20213704.png)
+
 
 
 ## Installation & Running
