@@ -256,10 +256,5 @@ Tests cover:
 
 ---
 
-## Contributing
-See `CONTRIBUTING.md`.
-
-## License
-MIT
 
 
