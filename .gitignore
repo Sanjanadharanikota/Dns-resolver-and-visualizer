@@ -1,0 +1,23 @@
+# Virtual environment
+venv/
+
+# Python cache
+backend/__pycache__/
+tests/__pycache__/
+**/__pycache__/
+
+# Logs
+backend/logs/server.log
+backend/backend/logs/server.log
+*.log
+
+# Runtime cache/data
+backend/data/cache.json
+data/cache.json
+data/whitelist.txt
+
+# Temp files
+*.pyc
+*.pyo
+*~
+*.tmp

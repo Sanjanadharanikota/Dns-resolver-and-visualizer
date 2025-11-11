@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark">
+  <title>DNS Lookup Visualizer</title>
+
+  <!-- Fonts + Bootstrap -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <span class="navbar-brand fw-semibold">DNS Lookup Visualizer</span>
+      <button id="themeToggleBtn" class="btn btn-sm btn-accent">🌙 Dark Mode</button>
+    </div>
+  </nav>
+
+  <!-- Main Section -->
+  <section class="section py-5 position-relative">
+    <div class="container" style="max-width:1280px">
+      <!-- Domain input + main controls -->
+      <div class="card p-3 mb-4">
+        <div class="row g-3 align-items-center">
+          <div class="col-lg-8">
+            <input id="domainInput" class="form-control" placeholder="Enter domain (e.g. instagram.com)" />
+          </div>
+          <div class="col-lg-4 d-grid">
+            <button id="resolveBtn" class="btn btn-accent">Start Visualization</button>
+          </div>
+        </div>
+
+        <div class="d-flex flex-wrap gap-2 mt-3">
+          <div class="d-inline-flex align-items-center gap-2">
+            <label class="mb-0 small">Mode</label>
+            <select id="modeSelect" class="form-select form-select-sm" style="width:160px;">
+              <option value="recursive" selected>Recursive</option>
+              <option value="iterative">Iterative</option>
+              <option value="multi">Multi-Path (A+AAAA)</option>
+            </select>
+          </div>
+          <button id="showCacheBtn" class="btn btn-outline-primary btn-sm">Show Cache</button>
+          <button id="refreshCacheBtn" class="btn btn-outline-secondary btn-sm">Clear Cache</button>
+          <button id="refreshBlockedBtn" class="btn btn-outline-warning btn-sm">Show Blocked</button>
+          <button id="clearBtn" class="btn btn-outline-danger btn-sm">Clear</button>
+
+          <!-- Playback controls -->
+          <div class="ms-auto d-flex align-items-center gap-2">
+            <label class="mb-0 small">Speed</label>
+            <select id="speedRange" class="form-select form-select-sm" style="width:110px;">
+              <option value="1">Slow</option>
+              <option value="2" selected>Normal</option>
+              <option value="3">Fast</option>
+            </select>
+            <button id="playPauseBtn" class="btn btn-sm btn-outline-light">⏯️</button>
+            <button id="replayBtn" class="btn btn-sm btn-outline-light">🔁</button>
+            <label class="form-check d-inline-flex align-items-center mb-0 ms-2">
+              <input id="autoRotateToggle" class="form-check-input" type="checkbox" />
+              <span class="form-check-label ms-1 small">Auto-rotate</span>
+            </label>
+            <label class="form-check d-inline-flex align-items-center mb-0 ms-2">
+              <input id="learningModeToggle" class="form-check-input" type="checkbox" />
+              <span class="form-check-label ms-1 small">Learning</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visualizer + Logs -->
+      <div class="row g-3 position-relative">
+        <div class="col-lg-7 position-relative">
+          <div id="visualizerContainer" class="card" style="height:660px; background:#0f172a; overflow:hidden;"></div>
+          <div id="learningOverlay" class="learning-overlay" hidden></div>
+          <div id="infoCard" class="card p-2" hidden></div>
+          <div id="timelineBar" class="timeline-bar mt-2"></div>
+        </div>
+
+        <div class="col-lg-5">
+          <div id="results" class="card p-3 mb-3" style="height:340px;overflow:auto">Results will appear here</div>
+          <div id="logs" class="card p-3" style="height:300px;overflow:auto;">Logs appear here</div>
+        </div>
+      </div>
+
+      <!-- Blocked domains -->
+      <div class="card p-3 mt-4">
+        <h5>Blocked Domains</h5>
+        <div class="input-group mb-3">
+          <input id="blockDomainInput" class="form-control" placeholder="Enter domain to block/unblock" />
+          <button id="blockBtn" class="btn btn-danger">Block</button>
+          <button id="unblockBtn" class="btn btn-success">Unblock</button>
+        </div>
+        <pre id="blockedPanel" class="p-2 border rounded" style="min-height:100px;">No blocked domains</pre>
+      </div>
+
+      <!-- Cache summary -->
+      <div class="card p-3 mt-4">
+        <h5>Cache Summary</h5>
+        <button id="showCacheBtn2" class="btn btn-accent btn-sm mb-2">Show Cache</button>
+        <pre id="cachePanel" class="p-2 border rounded" style="min-height:100px;">No cache entries</pre>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer text-center small py-3">
+    <p>All features active — Block, Cache, Visualization, Dark Mode ✅</p>
+  </footer>
+
+  <!-- Floating Back-to-Top -->
+  <button id="backToTop" class="btn btn-accent"
+    style="position:fixed;bottom:20px;right:20px;display:none;border-radius:50%;width:45px;height:45px;z-index:999;">⬆️</button>
+
+  <!-- Core Libs -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="./js/visualizer3d.js"></script>
+  <script src="./js/script.js"></script>
+
+  <!-- Navbar Scroll Glow -->
+  <script>
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) navbar.classList.add('scrolled');
+      else navbar.classList.remove('scrolled');
+    });
+
+    // Floating back-to-top button
+    const topBtn = document.getElementById("backToTop");
+    window.addEventListener("scroll", () => {
+      topBtn.style.display = window.scrollY > 300 ? "block" : "none";
+    });
+    topBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+
+  <!-- Theme Toggle -->
+  <script>
+    const themeBtn = document.getElementById("themeToggleBtn");
+    themeBtn.addEventListener("click", () => {
+      const html = document.documentElement;
+      const current = html.getAttribute("data-theme");
+      const next = current === "light" ? "dark" : "light";
+      html.setAttribute("data-theme", next);
+      themeBtn.textContent = next === "dark" ? "☀️ Light Mode" : "🌙 Dark Mode";
+    });
+  </script>
+</body>
+</html>
