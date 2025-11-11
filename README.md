@@ -187,13 +187,21 @@ Returns cache summary for UI/debug:
 - Auto-rotate resumes after summary; disabled when a domain is blocked
  - Mode-specific behaviors:
    - Iterative: labeled steps per hop; earlier segments dim as you progress
-   - Multi-Path: parallel A/AAAA branches from Authoritative; slower branch dimmed
+   - Multi-Path: parallel A/AAAA
+   - branches from Authoritative; slower branch dimmed
 
 ### Keyboard Shortcuts
 - Enter in domain input → Resolve
 - Esc → Clear visualization
 
 ---
+## Screenshots of project
+https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Screenshot%202025-11-11%20213038.png
+https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Screenshot%202025-11-11%20213132.png
+https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Screenshot%202025-11-11%20213222.png
+https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Screenshot%202025-11-11%20213544.png
+https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Screenshot%202025-11-11%20213704.png
+
 
 ## Installation & Running
 ```bash
