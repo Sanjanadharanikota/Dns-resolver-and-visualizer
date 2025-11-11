@@ -73,6 +73,8 @@ dns-resolver-visualizer/
   - Blocked runs: Access shows red “Restricted — blocked by policy”, auto-rotate stays off
 - Iterative visualization: distinct colored segments per hop with floating labels over each path
 - Multi-Path visualization: two simultaneous branches (A=green, AAAA=blue), slower branch dimmed, per-type latencies and “winner”
+- Cache hit shortcut visualization
+- NXDOMAIN detection and red error state.
 - Results panel:
   - DNS records table (A/AAAA/CNAME/MX/NS/TXT/SRV/CAA)
   - Timing Analysis table (populated in all modes)
@@ -196,6 +198,8 @@ Returns cache summary for UI/debug:
 
 ---
 ## Screenshots of project
+[![image-1](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Screenshot%202025-11-11%20213038.png)](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Screenshot%202025-11-11%20213038.png)
+
 https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Screenshot%202025-11-11%20213038.png
 https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Screenshot%202025-11-11%20213132.png
 https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Screenshot%202025-11-11%20213222.png
@@ -255,6 +259,46 @@ Tests cover:
   - Use `python backend\app.py` and ensure the virtualenv is activated
 
 ---
+### Features at a Glance
+-<b>DNS Record Resolution</b>
+Supports A, AAAA, CNAME, MX, NS, TXT, SRV, and CAA records.
 
+-<b>3D DNS Path Visualization</b>
+Animated journey of the DNS query from Client → Access → Cache → Root → TLD → Authoritative → IP.
+
+-<b>Three Resolution Modes</b>
+
+Recursive
+
+Iterative
+
+Multi-Path (parallel A & AAAA lookups)
+
+-<b>TTL-Based Caching</b>
+In-memory + JSON disk cache with automatic expiry and negative caching for NXDOMAIN.
+
+-<b>Access Control System</b>
+Block or unblock domains using a simple UI panel.
+
+-<b>Cache Management Tools</b>
+Show cache, clear cache, view expiration timers, and track cache hits.
+
+-<b>NXDOMAIN Handling</b>
+Red error banner in 3D view when the domain does not exist.
+
+-<b>Blocked-Domain Visualization</b>
+Shows restricted state in 3D with a clear message.
+
+-<b>Timing Analysis</b>
+Per-hop latency for Root, TLD, and Authoritative servers.
+
+-<b>Smooth UI and Controls</b>
+Orbit controls, auto-rotate, adjustable animation speed, replay, pause/play.
+
+-<b>Admin API Endpoints</b>
+/api/resolve, /api/cache, /api/cache/clear, /api/blocked, /api/block, /api/unblock.
+
+-<b>Cross-Platform</b>
+Works on any browser; backend runs on Windows, Linux, or macOS.
 
 
