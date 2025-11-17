@@ -15,6 +15,16 @@ Modes (selectable in UI):
 - Multi-Path: parallel A and AAAA final hops from Authoritative with per-type latency and winner highlight
 
 ---
+## 🧠 Workflow Diagram
+
+[![Workflow](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Assets/Workflow.png)](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Assets/Workflow.png)
+
+---
+
+## 🏗️ System Architecture Diagram
+
+[![Architecture Diagram](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Assets/architecturediagram.png)](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Assets/architecturediagram.png)
+
 # Key Features
 
 ## Core DNS Engine
