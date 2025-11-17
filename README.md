@@ -17,13 +17,19 @@ Modes (selectable in UI):
 ---
 ## 🧠 Workflow Diagram
 
-[![Workflow](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Assets/Workflow.png)](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Assets/Workflow.png)
+<a href="https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Assets/Workflow.png">
+  <img src="https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Assets/Workflow.png" width="600">
+</a>
+
 
 ---
 
 ## 🏗️ System Architecture Diagram
 
-[![Architecture Diagram](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Assets/architecturediagram.png)](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Assets/architecturediagram.png)
+<a href="https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Assets/architecturediagram.png">
+  <img src="https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Assets/architecturediagram.png" width="600">
+</a>
+
 
 # Key Features
 
