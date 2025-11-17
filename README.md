@@ -15,6 +15,35 @@ Modes (selectable in UI):
 - Multi-Path: parallel A and AAAA final hops from Authoritative with per-type latency and winner highlight
 
 ---
+## 📑 Table of Contents
+
+- [System Architecture Diagram](#️-system-architecture-diagram)
+- [Workflow Diagram](#-workflow-diagram)
+- [Key Features](#key-features)
+  - [Core DNS Engine](#core-dns-engine)
+  - [TTL-Based Caching](#ttl-based-caching)
+  - [Access Control](#acess-control)
+  - [3DVisualizer](#3dvisualizer)
+  - [NXDomain Handling](#nxdomain-handling)
+- [Demo (Local)](#demo-local)
+- [Project Execution Video](#-project-execution-video)
+- [Screenshots](#-screenshots-of-project)
+- [Project Structure](#project-structure)
+- [Features (Detailed)](#features)
+- [How It Works](#how-it-works)
+  - [Resolution Flow](#resolution-flow)
+  - [Caching](#caching)
+  - [Access Control](#access-control)
+  - [Negative Answers NXDOMAIN](#negative-answers-nxdomain)
+- [Backend API](#backend-api)
+- [Frontend](#frontend)
+  - [3D Viewer Controls](#3d-viewer-controls)
+  - [Keyboard Shortcuts](#keyboard-shortcuts)
+- [Installation & Running](#installation--running)
+- [Testing](#testing)
+- [Configuration & Defaults](#configuration--defaults)
+- [Troubleshooting](#troubleshooting)
+- [Features at a Glance](#features-at-a-glance)
 ## 🏗️ System Architecture Diagram
 
 <a href="https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Assets/architecturediagram.png">
