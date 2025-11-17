@@ -235,12 +235,60 @@ Returns cache summary for UI/debug:
 - Esc → Clear visualization
 
 ---
-## Screenshots of project
-### Screenshots
+## 🎥 Project Execution Video
+
+🔗 **Click below to watch full demo**
+
+👉 https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Assets/ExecutionVideo/DNS_RESOLVER_AND_VISUALISER.mp4
 
 
+---
 
-[![Screenshot 4](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Screenshot%202025-11-11%20213544.png)](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Screenshot%202025-11-11%20213544.png)
+### 🖼️ Screenshots
+
+---
+
+**🔹 Recursive Mode Resolution**  
+[![Recursive Mode](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Assets/Screenshots/recursivemode.jpg)](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Assets/Screenshots/recursivemode.jpg)  
+Illustrates how DNS resolution happens recursively until the authoritative server is reached.
+
+---
+
+**🔹 Iterative Mode Resolution**  
+[![Iterative Mode](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Assets/Screenshots/iterativemode.jpg)](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Assets/Screenshots/iterativemode.jpg)  
+Shows how DNS queries move step-by-step without expecting a full response from any server.
+
+---
+
+**🔹 Multipath Visualization**  
+[![Multipath](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Assets/Screenshots/multipath.png)](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Assets/Screenshots/multipath.png)  
+Displays multiple possible DNS resolution paths in a 3D visual journey.
+
+---
+
+**🔹 Cache & Blocklist Overview**  
+[![Cache and Blocklist](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Assets/Screenshots/cache_and_blocklist.jpg)](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Assets/Screenshots/cache_and_blocklist.jpg)  
+Shows cached DNS responses and currently blocked domains.
+
+---
+
+**🔹 Cache Hit Response**  
+[![Cache Hit](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Assets/Screenshots/cachehit.jpg)](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Assets/Screenshots/cachehit.jpg)  
+Demonstrates fast results when a DNS response is found in cache.
+
+---
+
+**🔹 Blocked Domain Detection**  
+[![Blocked Domain](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Assets/Screenshots/blockeddomain.jpg)](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Assets/Screenshots/blockeddomain.jpg)  
+Shows how the resolver blocks requests to blacklisted domains.
+
+---
+
+**🔹 Negative Domain Result**  
+[![Negative Domain](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Assets/Screenshots/negativedomain.jpg)](https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Assets/Screenshots/negativedomain.jpg)  
+Displays what happens when a non-existent or invalid domain is queried.
+
+
 
 
 
