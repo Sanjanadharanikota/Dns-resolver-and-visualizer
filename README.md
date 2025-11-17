@@ -15,6 +15,13 @@ Modes (selectable in UI):
 - Multi-Path: parallel A and AAAA final hops from Authoritative with per-type latency and winner highlight
 
 ---
+## 🏗️ System Architecture Diagram
+
+<a href="https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Assets/architecturediagram.png">
+  <img src="https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Assets/architecturediagram.png" width="600">
+</a>
+
+---
 ## 🧠 Workflow Diagram
 
 <a href="https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Assets/Workflow.png">
@@ -23,13 +30,6 @@ Modes (selectable in UI):
 
 
 ---
-
-## 🏗️ System Architecture Diagram
-
-<a href="https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Assets/architecturediagram.png">
-  <img src="https://github.com/Sanjanadharanikota/Dns-resolver-and-visualizer/blob/main/Assets/architecturediagram.png" width="600">
-</a>
-
 
 # Key Features
 
